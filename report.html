@@ -1,0 +1,329 @@
+# 《通信软件开发与应用》课程结业报告
+<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
+
+@[TOC](文章目录)
+</font>
+
+<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
+
+# 课程要求
+
+<font color=#999AAA >
+
+本课程期末结业需完成以下两个任务，提交url即可。
+
+构建一个静态或动态网站即以下要求中任选A或B，主题自选，要求如下：
+
+A. 静态网站。可使用你喜欢的任何CSS框架如BootStrap、MDB、tailwind等，页面不少于5个，最后一个页面放置结业报告的超链接。网站需部署到你喜欢的托管服务器上如github等。
+
+B. 动态网站。使用任何一个前端框架如Angular等进行某应用网站的开发如英雄之旅等，需要有CRUD即增删改查功能并有一定的样式，网站内放置结业报告的超链接。网站需部署到你喜欢的托管服务器上如github等。
+
+撰写结业报告，要求如下：
+
+A. 题目为《通信软件开发与应用》课程结业报告；
+
+B. 报告需阐述：做的什么、开发过程、遇到的问题、如何解决、哪些未解决、总结；
+
+C. 该报告需表现为HTML格式，从你上面的网站中可访问到。
+</font>
+
+<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
+
+<font color=#999AAA >
+
+# 一、选择模板
+[模板链接](https://bootstraptaste.com/personal-free-resume-bootstrap-template/)
+
+<font color=#999AAA >该模板是用现代 HTML5 和 CSS3 代码和 Bootstrap 构建的。</font>
+
+模板文件如下：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210619235627383.png)
+
+<font color=#999AAA >
+
+
+
+# 二、布局设计
+## 1.颜色
+我采用了红色来作为我的网站主色。个人的红色照片配上网页线条的红，使画面和谐简洁又富有专属于红色的张扬感。红与黑的交织，高贵大气又上档次！！
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210620001938252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0RhbmRhbjIzX19f,size_16,color_FFFFFF,t_70)
+
+
+## 2.内容板块划分
+如图，我一共划分了五个区。第一个是home主页面，此页面主要用作封面、导航和介绍。
+第二个是About，用于介绍个人基本信息。此页面还介绍了我的技能、爱好，在最后有个“心情小诗”的分区：在这里展示了自己写的一些短句，自动翻滚显示。
+第三个是Resume:是个人简历，是属于比较庄重严谨的部分。
+第四个是Fiction小说：用于展示本人写的一些短故事。每一个都可以点进去阅读。
+第五个是Image:包括个人照片、作品照片和奖状类图片。既做了分类，又可在“ALL”全部查看。
+第六个Report:用于放置结业报告。以及【联系我】的介绍页面。
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210620000753376.png)
+
+# 三、部分代码展示
+## 1.头部
+```html
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>澹澹的个人网站</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+```
+
+## 2.About板块
+
+```html
+ <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/me.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>个人简介 &amp; 何春燕</h3>
+          <p class="font-italic">
+            The body is a Bodhi tree, the mind a standing mirror bright.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 May 1999</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> ddarcy123@163.com</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> 138 8383 4320</li>
+                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> 重庆</li>
+                
+                
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 22</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> 本科</li>
+                <li><i class="icofont-rounded-right"></i> <strong>微信公众号:</strong> foryourbook</li>
+                <li><i class="icofont-rounded-right"></i> 今日头条： <a href="http://dwz.date/bU4q">澹澹xiu</a>
+              </ul>
+            </div>
+          </div>
+          <p>
+            流水不争先，争的是滔滔不绝
+          </p>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+```
+效果如下：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210620002623520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0RhbmRhbjIzX19f,size_16,color_FFFFFF,t_70)
+
+
+
+## 3.技能板块
+
+```html
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">写作 <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">辩论 <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Office<i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">网站 <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">剪视频 <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Photoshop <i class="val">65%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Skills -->
+```
+效果如下：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2021062000272847.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0RhbmRhbjIzX19f,size_16,color_FFFFFF,t_70)
+
+## 4.兴趣爱好板块
+```html
+ <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-store-line" style="color: #ffbb2c;"></i>
+            <h3>樊登听书</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+            <h3>看书</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+            <h3>狼人杀</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+            <h3>辩论</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-database-2-line" style="color: #47aeff;"></i>
+            <h3>写作 </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+            <h3>自拍</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+            <h3>篮球</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+            <h3>旅行</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-anchor-line" style="color: #b2904f;"></i>
+            <h3>看剧 </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-disc-line" style="color: #b20969;"></i>
+            <h3>唱歌</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-base-station-line" style="color: #ff5828;"></i>
+            <h3>裙子</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+            <h3>动漫</h3>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Interests -->
+
+```
+效果如下：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/202106200029283.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0RhbmRhbjIzX19f,size_16,color_FFFFFF,t_70)
+# 四、部署到github
+新建仓库，上传代码文件。如图：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210620003129253.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0RhbmRhbjIzX19f,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210620003242328.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0RhbmRhbjIzX19f,size_16,color_FFFFFF,t_70)
+ [github部署完成的网站链接](https://github.com/dandan0501/hcy.github.io)
+
+# 五、几个小tips
+## 1.在github上步骤
+注册——登录——新建仓库——对命名建议  用户名+github.io（这样网址不容易太复杂、有档次）——上传写好的代码文件夹（注意一次性不超过100个文件）——点设置——pages页面可以查看网址，有时候需要注意选中标签。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210620004239947.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0RhbmRhbjIzX19f,size_16,color_FFFFFF,t_70)
+## 2.模板选择
+这里有免费模板可以下载：
+
+https://bootstraptaste.com/
+https://templatemo.com/page/1
+
+<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
+
+# 总结
+<font color=#999AAA >第五点：几个小tips也是我遇到的难题的解决方法。
